@@ -1,0 +1,9 @@
+h1 #{ @product.name.capitalize }
+.container
+  .card
+    .card-body
+      p = @product.description
+      p <small> Rs </small> #{ @product.price }
+      = button_to 'Add to Cart', add_to_cart_path(@product), :method => 'put',class: "btn btn-primary"
+    .card-footer
+      = button_to 'Back to Product List', products_path, :method => 'get',class: "btn"
