@@ -1,0 +1,9 @@
+.card
+  .card-body
+     
+    .card-title
+      p #{ product.name }
+    .card-text
+      p <small> Rs </small> #{ product.price }
+    .card-footer
+      = button_to 'View Product', product_path(product), :method => 'get',class:"btn btn-primary"
