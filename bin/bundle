@@ -1,4 +1,4 @@
-#!/usr/bin/env: ruby\r
+#!/usr/bin/env: ruby
 require "rubygems"
 
 m = Module.new do
