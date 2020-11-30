@@ -13,6 +13,7 @@ development:
   <<: *default
   database: shopping_cart_development
   adapter: mysql2
+  host: localhost
   username: root
   password: vihaan2019
 
@@ -23,6 +24,7 @@ test:
   <<: *default
   database: shopping_cart_test
   adapter: mysql2
+  host: localhost
   username: root
   password: vihaan2019
 
