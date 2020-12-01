@@ -12,9 +12,8 @@ default: &default
 development:
   <<: *default
   database: shopping_cart_development
-  adapter: mysql2
   host: 127.0.0.1
-  port: 5000
+  port: 3306
   username: root
   password: vihaan2019
   socket: /tmp/mysql.sock
@@ -26,7 +25,7 @@ test:
   database: shopping_cart_test
   adapter: mysql2
   host: 127.0.0.1
-  port: 5000
+  port: 3306
   username: root
   password: vihaan2019
 
@@ -35,6 +34,9 @@ production:
   database: shopping_cart_development
   adapter: mysql2
   host: 127.0.0.1
-  port: 5000
+  port: 3306
   username: root
   password: vihaan2019
+
+
+  
