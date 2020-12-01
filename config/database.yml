@@ -12,11 +12,9 @@ default: &default
 development:
   <<: *default
   database: shopping_cart_development
-  host: 127.0.0.1
-  port: 3306
+  adapter: mysql2
   username: root
   password: vihaan2019
-  socket: /tmp/mysql.sock
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
@@ -24,19 +22,12 @@ test:
   <<: *default
   database: shopping_cart_test
   adapter: mysql2
-  host: 127.0.0.1
-  port: 3306
   username: root
   password: vihaan2019
-
 production:
   <<: *default
   database: shopping_cart_development
   adapter: mysql2
-  host: 127.0.0.1
-  port: 3306
   username: root
   password: vihaan2019
 
-
-  
