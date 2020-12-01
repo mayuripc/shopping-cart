@@ -66,6 +66,7 @@ group :test do
 end
 group :production do
   # Gem for deploy to Heroku
+  gem 'mysql2'
   gem 'rails_12factor'
 end
 
